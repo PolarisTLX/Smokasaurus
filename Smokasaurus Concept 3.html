@@ -1,0 +1,120 @@
+<html>
+<head>
+  <title>Smokasaurus 3</title>
+</head>
+
+<body class="fixed-nav">
+
+<nav id="main">
+	      <ul class="menu">
+	        <li><a href="">Home</a></li>
+	        <li><a href="">What is Smokasaurus?</a></li>
+	        <li><a href="">How does it work?</a></li>
+	        <li><a href="">How can I get one?</a></li>
+	      </ul>
+</nav>
+
+
+<section class="wrapper">
+<img id="Arm" src="Arm_01-01.png" height="50%" alt="The image could not be loaded"/>
+<img id="Patty" src="Patty_01-01.png" height="50%" alt="The image could not be loaded"/>
+<img id="Head" src="Head_01-01.png" height="50%" alt="The image could not be loaded"/>
+<img id="Jaw" src="Jaw_01-01.png" height="50%" alt="The image could not be loaded"/>
+<img id="Body" src="Body_01-01.png" height="50%" alt="The image could not be loaded"/>
+</section>
+
+
+</body>
+
+<style>
+
+/*THIS IS TO KEEP THE LOGO PARTS GROUPED TOGETHER DESPITE WINDOW CHANGING RESOLUTIONS*/
+section.wrapper {
+  margin: 0 auto;    /*this keeps the logo centered on the page*/
+  min-width: 800px; /* Minimum width of your wrapper element */
+  max-width: 800px;
+  min-height: 800px;
+  max-height: 800px;
+
+}
+
+
+/*LOGO STYLING*/
+
+
+img#Arm {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+img#Arm:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+img#Arm {
+  position: relative;
+  transform:translate(175px, 165px);
+  -webkit-transition: all 1s ease;
+}
+img#Arm:hover {
+  -webkit-transform: scale(1.2) rotate(30deg) translate(50px);
+  /*transform-origin: 100 100;*/
+}
+img#Patty {
+  position: relative;
+  transform:translate(100px, -300px);
+}
+img#Head {
+  position: relative;
+  transform:translate(175px, -650px);
+}
+img#Jaw {
+  position: relative;
+  transform:translate(175px, -1055px);
+}
+img#Body {
+  position: relative;
+  transform:translate(180px, -1450px);
+}
+
+/*END LOGO STYLNG*/
+
+
+
+
+/*NAVIGATION BAR STYLING*/
+nav {
+  background:black;
+  top:0;
+  width: 100%;
+  transition:all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+.fixed-nav nav {
+  position: fixed;
+  /*box-shadow: 0 10px rgba(0,0,0,0.1);  /*this is just a shadow below the navbar to be fancy*/*/
+}
+nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+  display:flex;
+}
+nav li {
+  flex:1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  padding:20px;
+  display: inline-block;
+  color:white;
+  transition:all 0.2s;
+  text-transform: uppercase;
+}
+/*END NAVIGATION BAR STYLING*/
+</style>
