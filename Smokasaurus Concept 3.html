@@ -23,6 +23,8 @@
 <img id="Body" src="Body_01-01.png" height="50%" alt="The image could not be loaded"/>
 </section>
 
+<img id="test" src="Arm_01-01.png"/>
+
 
 </body>
 
@@ -39,13 +41,17 @@ section.wrapper {
 }
 
 
+section img#Arm {
+  transition: transform 1s ease-in-out;
+}
+section img#Arm:hover {
+  transform: rotate(180deg);
+}
+
 /*LOGO STYLING*/
 
 
-img#Arm {
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition:         transform .8s ease-in-out;
-}
+
 img#Arm:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
