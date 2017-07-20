@@ -1,6 +1,6 @@
     <html>
     <head>
-      <title>Smokasaurus 3</title>
+      <title>Smokasaurus 4</title>
     </head>
 
     <body class="fixed-nav">
@@ -45,10 +45,11 @@
 
     img#Arm {
       transform-origin: 300px 300px;
-      transition: transform 1s ease-in-out;
+      transition:  1s ease-in-out;
     }
     section:hover img#Arm {
-        transform: rotate(45deg);
+        transform: translate(175px, 150px) rotate(10deg);
+        /*NOTE THIS OVERWRITE ALL PREVIOUS INITIAL TRANSFORMS, SO MUST REPEAT PREVIOUS transform: translate to keep the obtject in place.*/
     }
     /*img#Head {
       transition: transform 1s ease-in-out;
@@ -64,7 +65,7 @@
 
 img#Arm {
   position: relative;
-  transform:translate(175px, 165px);
+  transform:translate(175px, 150px);
 }
 img#Patty {
   position: relative;
