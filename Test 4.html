@@ -1,0 +1,70 @@
+
+    <html>
+    <body>
+
+    <section class="wrapper">
+      <img id="Arm" src="Arm_01-01.png" height="50%" alt="The image could not be loaded"/>
+      <img id="Patty" src="Patty_01-01.png" height="50%" alt="The image could not be loaded"/>
+      <img id="Head" src="Head_01-01.png" height="50%" alt="The image could not be loaded"/>
+      <img id="Jaw" src="Jaw_01-01.png" height="50%" alt="The image could not be loaded"/>
+      <img id="Body" src="Body_01-01.png" height="50%" alt="The image could not be loaded"/>
+  </section>
+
+    </body>
+
+    <style>
+
+    /*THIS IS TO KEEP THE LOGO PARTS GROUPED TOGETHER DESPITE WINDOW CHANGING RESOLUTIONS*/
+    section.wrapper {
+      margin: 0 auto;    /*this keeps the logo centered on the page*/
+      min-width: 800px; /* Minimum width of your wrapper element */
+      max-width: 800px;
+      min-height: 800px;
+      max-height: 800px;
+    }
+
+    img#Arm {
+      transition: transform 1s ease-in-out;
+    }
+    section:hover img#Arm {
+      transform: rotate(180deg);
+    }
+    img#Head {
+      transition: transform 1s ease-in-out;
+    }
+    section:hover img#Head {
+      transform: rotate(180deg);
+    }
+
+
+
+
+    /*LOGO STYLING*/
+
+
+
+    img#Arm {
+      position: relative;
+      transform:translate(175px, 165px);
+      -webkit-transition: all 1s ease;
+    }
+
+    }
+    img#Patty {
+      position: relative;
+      transform:translate(100px, -300px);
+    }
+    img#Head {
+      position: relative;
+      transform:translate(175px, -650px);
+    }
+    img#Jaw {
+      position: relative;
+      transform:translate(175px, -1055px);
+    }
+    img#Body {
+      position: relative;
+      transform:translate(180px, -1450px);
+    }
+
+    </style>
